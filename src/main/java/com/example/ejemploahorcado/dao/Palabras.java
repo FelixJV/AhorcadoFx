@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Palabras {
     private final List<Palabra> palabras;
-    private static int autonumerico;
+    private static int autonumericos;
 
     public Palabras()  {
         //Aquí leer fichero cuando ya esté el fichero creado con las palabras del DataFaker
