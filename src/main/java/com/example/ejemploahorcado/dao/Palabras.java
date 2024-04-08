@@ -1,13 +1,10 @@
 package com.example.ejemploahorcado.dao;
 
 
-import common.Categoria;
-import common.CategoriaException;
-import domain.Palabra;
-import net.datafaker.Faker;
-
+import com.example.ejemploahorcado.common.Categoria;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.domain.Palabra;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class Palabras {
@@ -18,15 +15,14 @@ public class Palabras {
         //Aquí leer fichero cuando ya esté el fichero creado con las palabras del DataFaker
         this.palabras = new ArrayList<>();
 
-        HashSet<Palabra> hs = new HashSet<>();
-        try {
-            hs.add(new Palabra(autonumerico++, 1, "El mejor verano de mi vida", Categoria.comedia.name()));
-            hs.add(new Palabra(autonumerico++, 1, "Misión Imposible IV fallout", Categoria.accion.name()));
 
+        try {
+            palabras.add(new Palabra(autonumerico++, 1, "El mejor verano de mi vida", Categoria.comedia.name()));
+            palabras.add(new Palabra(autonumerico++, 1, "Misión Imposible IV fallout", Categoria.accion.name()));
             Faker faker = new Faker();
             String nombre = faker.gameOfThrones().character();
             for (int i = 0; i < 100; ) {
-                 if (hs.add(new Palabra(autonumerico++, 2, faker.pokemon().name(), Categoria.pokemon.name())))
+                 if (palabras.add(new Palabra(autonumerico++, 2, faker.pokemon().name(), Categoria.pokemon.name())))
                      i++;
             }
         } catch (CategoriaException e) {

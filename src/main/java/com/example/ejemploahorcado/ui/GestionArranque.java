@@ -1,8 +1,8 @@
 package com.example.ejemploahorcado.ui;
 
-import common.Constantes;
-import service.GestionPalabras;
-import service.IGestionPalabras;
+import com.example.ejemploahorcado.common.Constantes;
+import com.example.ejemploahorcado.service.GestionPalabras;
+import com.example.ejemploahorcado.service.IGestionPalabras;
 
 import java.util.Scanner;
 

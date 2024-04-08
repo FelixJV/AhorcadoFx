@@ -1,8 +1,8 @@
 package com.example.ejemploahorcado.dao;
 
-import common.CategoriaException;
-import domain.Juego;
-import domain.Palabra;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.domain.Juego;
+import com.example.ejemploahorcado.domain.Palabra;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -39,7 +39,6 @@ public class DaoPalabrasFicheros {
             auxiliar = new ArrayList<>();
             while (sc.hasNextLine()) {
                 String cadena = sc.nextLine();
-                String[] trozos = cadena.split(";");
                 try {
                     //auxiliar.add(new Palabra(Integer.parseInt(trozos[0]),Integer.parseInt(trozos[1]),trozos[2],trozos[3]));
                     auxiliar.add(new Palabra(cadena));
@@ -49,7 +48,7 @@ public class DaoPalabrasFicheros {
             }
             ;
         } catch (FileNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DaoPalabrasFicheros.class.getName()).log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            System.out.println();
 
         }
 

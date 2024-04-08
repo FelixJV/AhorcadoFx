@@ -1,12 +1,12 @@
 package com.example.ejemploahorcado.ui;
 
 
-import common.CategoriaException;
-import dao.DaoPalabrasFicheros;
-import domain.Juego;
-import domain.Jugador;
-import domain.Palabra;
-import net.datafaker.Faker;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.dao.DaoPalabrasFicheros;
+import com.example.ejemploahorcado.domain.Juego;
+import com.example.ejemploahorcado.domain.Jugador;
+import com.example.ejemploahorcado.domain.Palabra;
+import com.example.ejemploahorcado.net.datafaker.Faker;
 
 import java.io.File;
 

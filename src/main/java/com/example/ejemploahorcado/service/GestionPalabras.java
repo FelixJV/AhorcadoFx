@@ -1,10 +1,10 @@
 package com.example.ejemploahorcado.service;
 
-import common.CategoriaException;
-import dao.DaoPalabras;
-import dao.DaoPalabrasFicheros;
-import dao.DaoPalabrasImplementacion;
-import domain.Palabra;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.dao.DaoPalabras;
+import com.example.ejemploahorcado.dao.DaoPalabrasFicheros;
+import com.example.ejemploahorcado.dao.DaoPalabrasImplementacion;
+import com.example.ejemploahorcado.domain.Palabra;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

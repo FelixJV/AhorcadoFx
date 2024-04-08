@@ -1,7 +1,7 @@
 package com.example.ejemploahorcado.service;
 
-import common.CategoriaException;
-import domain.Palabra;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.domain.Palabra;
 
 import java.io.IOException;
 import java.util.List;

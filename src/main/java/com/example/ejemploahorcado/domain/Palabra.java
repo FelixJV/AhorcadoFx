@@ -1,11 +1,11 @@
 package com.example.ejemploahorcado.domain;
 
 
-import common.CategoriaException;
-import common.Comprobacion;
-import dao.Palabras;
+import com.example.ejemploahorcado.common.CategoriaException;
+import com.example.ejemploahorcado.common.Comprobacion;
+import com.example.ejemploahorcado.dao.Palabras;
 
-public class Palabra {
+public class Palabra implements Comparable<Palabra> {
     private int id;
     private int level;
     private String incognita;
@@ -34,6 +34,16 @@ public class Palabra {
         Comprobacion.categoriaOk(categoria);
         this.categoria = categoria;
     }
+    public Palabra(String cadena) throws CategoriaException {
+        String[] trozos = cadena.split(";");
+        //,Integer.parseInt(trozos[1]),trozos[2],trozos[3])
+        this.id = Integer.parseInt(trozos[0]);
+        this.level = level;
+        this.incognita = incognita;
+        Comprobacion.categoriaOk(categoria);
+        this.categoria = categoria;
+
+    }
     public String getCategoria() {
         return categoria;
     }
@@ -53,5 +63,10 @@ public class Palabra {
 
     public void arraychar(String palabra){
         palabra.toCharArray();
+    }
+
+    @Override
+    public int compareTo(Palabra o) {
+        return 0;
     }
 }

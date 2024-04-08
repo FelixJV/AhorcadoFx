@@ -1,6 +1,6 @@
 package com.example.ejemploahorcado.dao;
 
-import domain.Palabra;
+import com.example.ejemploahorcado.domain.Palabra;
 
 import java.util.List;
 

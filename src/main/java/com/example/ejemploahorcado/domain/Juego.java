@@ -1,6 +1,6 @@
 package com.example.ejemploahorcado.domain;
 
-import common.CategoriaException;
+import com.example.ejemploahorcado.common.CategoriaException;
 
 import java.util.Scanner;
 

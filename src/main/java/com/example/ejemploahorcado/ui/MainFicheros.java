@@ -1,6 +1,6 @@
 package com.example.ejemploahorcado.ui;
 
-import dao.DaoPalabrasFicheros;
+import com.example.ejemploahorcado.dao.DaoPalabrasFicheros;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
