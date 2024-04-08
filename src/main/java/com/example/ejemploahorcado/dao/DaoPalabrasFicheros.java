@@ -138,7 +138,7 @@ public class DaoPalabrasFicheros {
             auxiliar = (List<Palabra>) is.readObject();
 
         } catch (IOException | ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DaoPalabrasFicheros.class.getName()).log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            System.out.println(ex.getMessage());
 
         }
         return auxiliar;
