@@ -82,7 +82,7 @@ public class DaoPalabrasFicheros {
         PrintWriter pw = new PrintWriter(nombreFichero);
         //? si no está vacía
         for (int i = 0; i < lista.size(); i++) {
-            pw.println(lista.get(i).toStringFichero());
+            pw.println(lista.get(i).toString());
         }
         pw.close();
         return true;
@@ -150,7 +150,7 @@ public class DaoPalabrasFicheros {
             auxiliar = (Juego) is.readObject();
 
         } catch (IOException | ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DaoPalabrasFicheros.class.getName()).log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            System.out.println(ex.getMessage());
 
         }
         return auxiliar;
@@ -162,7 +162,7 @@ public class DaoPalabrasFicheros {
             os.writeObject(Palabras);
             escrito = true;
         } catch (IOException ex) {
-            java.util.logging.Logger.getLogger(DaoPalabrasFicheros.class.getName()).log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            System.out.println(ex.getMessage());
         }
         return escrito;
     }
@@ -172,7 +172,7 @@ public class DaoPalabrasFicheros {
             os.writeObject(juego);
             escrito = true;
         } catch (IOException ex) {
-            java.util.logging.Logger.getLogger(DaoPalabrasFicheros.class.getName()).log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            System.out.println(ex.getMessage());
         }
         return escrito;
     }
